@@ -102,6 +102,7 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
         import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+        // import {}
 
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
@@ -172,7 +173,6 @@
                 const user = result.user;
                 // IdP data available using getAdditionalUserInfo(result)
                 // ...
-                window.location = 'Level1(part-1).html';
             }).catch((error) => {
                 // Handle Errors here.
                 const errorCode = error.code;
@@ -188,4 +188,10 @@
         })
       </script>
 </body>
+<!-- <script>
+    window.history.forward();
+    function noBack(){
+        window.history.forward();
+    }
+</script> -->
 </html>

@@ -115,6 +115,8 @@
             width: 98.5%;
             margin: 10px;
             border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
             /* display: grid;
             justify-content: end; */
         }
@@ -130,7 +132,7 @@
         }
     </Style>
 </head>
-<body>
+<body onload="myFunction()">
     <div>
         <div class="heading">
             <h1>Word Cross</h1>
@@ -144,10 +146,10 @@
                     <tr>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z1" class="white" placeholder="1" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z2" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z3" class="white" placeholder="2" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z4" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z1" oninput="S()" class="white" placeholder="1" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z2" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z3" oninput="S()" class="white" placeholder="2" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z4" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
@@ -162,7 +164,7 @@
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z5" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z5" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
@@ -178,14 +180,126 @@
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z6" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z6" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z7" class="white" placeholder="3" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z7" oninput="S()" class="white" placeholder="3" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z8" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z9" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="z10" oninput="S()" class="white" placeholder="4" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z11" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z12" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z13" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z14" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z15" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z16" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="z17" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z18" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z19" oninput="S()" class="white" placeholder="5" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z20" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="z21" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z22" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z23" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z24" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="z25" class="white" oninput="S()" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z26" class="white" oninput="S()" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z27" class="white" oninput="S()" placeholder="6" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z28" class="white" oninput="S()" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z29" class="white" oninput="S()" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z30" class="white" oninput="S()" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="z31" oninput="S()" class="white" placeholder="7" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z32" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z33" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z34" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z35" oninput="S()" class="white" placeholder="8" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z36" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z37" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z38" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z39" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="z40" oninput="S()" class="white"size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z41" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z42" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z43" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                     </tr>
@@ -193,140 +307,28 @@
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z44" oninput="S()" class="white" placeholder="9" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z45" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z46" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z47" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z48" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z49" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z50" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z8" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z9" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="" id="z10" class="white" placeholder="4" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z11" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z12" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z13" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z14" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z15" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z16" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="" id="z17" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z18" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z19" class="white" placeholder="5" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z20" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="" id="z21" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z22" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z23" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z24" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="" id="z25" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z26" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z27" class="white" placeholder="6" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z28" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z29" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z30" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="" id="z31" class="white" placeholder="7" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z32" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z33" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z34" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z35" class="white" placeholder="8" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z36" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z37" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z38" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z39" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="" id="z40" class="white"size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z41" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z42" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z43" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z44" class="white" placeholder="9" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z45" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z46" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z47" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z48" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z49" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z50" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z51" class="white" placeholder="10" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z52" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z53" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z51" oninput="S()" class="white" placeholder="10" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z52" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z53" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                     </tr>
                     <tr>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z54" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z54" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z55" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z55" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
@@ -335,11 +337,11 @@
                     </tr>
                     <tr>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z56" class="white" placeholder="11" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z57" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z58" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z59" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z60" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z56" oninput="S()" class="white" placeholder="11" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z57" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z58" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z59" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z60" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
@@ -413,10 +415,45 @@
             </fieldset>
     </footer>
     <div class="end">
-        <a href="LeaderBord.html" style="padding-left: 5%;">LeaderBord</a>
-        <a href="index.html" style="padding-left: 80%;">Sign out</a>
+        <a href="LeaderBord.html" style="padding-left:75px;">LeaderBord</a>
+        <a href="" id="signout" style="padding-right:75px ;">Sign out</a>
     </div>
 </body>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+       import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+       import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+       import { getDatabase, ref, set, child, update, remove } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+       // import {}
+
+       // TODO: Add SDKs for Firebase products that you want to use
+       // https://firebase.google.com/docs/web/setup#available-libraries
+       
+       // Your web app's Firebase configuration
+       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+       const firebaseConfig = {
+           apiKey: "AIzaSyAGwGR5OxGCw0yngfgRCOWQEKnNTjNyZuY",
+           authDomain: "elitmusassignment-b7a0b.firebaseapp.com",
+           projectId: "elitmusassignment-b7a0b",
+           storageBucket: "elitmusassignment-b7a0b.appspot.com",
+           messagingSenderId: "780142124486",
+           appId: "1:780142124486:web:0620049bac3a43b0c2a6c7",
+           measurementId: "G-31T2XZFYLJ"
+       };
+       const app = initializeApp(firebaseConfig);
+       const db = getDatabase();
+       const auth = getAuth();
+
+       document.querySelector('#signout').addEventListener('click',function(){
+           signOut(auth).then(() => {
+           // Sign-out successful.
+           window.location.replace('index.html');
+           }).catch((error) => {
+           // An error happened.
+           });
+       })
+
+</script>
 <script>
     g1=document.getElementById("z1");
     g2=document.getElementById("z2");
@@ -481,8 +518,25 @@
     let words=[g1,g2,g3,g4,g5,g6,g7,g8,g9,g10,g11,g12,g13,g14,g15,g16,g17,g18,g19,g20,g21,g22,g23,g24,g25,g26,g27,g28,g29,g30,g31,g32,g33,g34,g35,g36,g37,g38,g39,g40,g41,g42,g43,g44,g45,g46,g47,g48,g49,g50,g51,g52,g53,g54,g55,g56,g57,g58,g59,g60];
     let ans = ["w","a","l","k","i","b","s","r","e","s","u","n","d","a","y","p","m","r","f","t","o","y","o","e","o","u","t","e","a","m","t","e","a","c","h","e","r","i","b","h","o","g","e","h","u","n","d","r","e","d","r","e","d","s","r","c","a","m","e","l"];
     let ans1 = ["W","A","L","K","I","B","S","R","E","S","U","N","D","A","Y","P","M","R","F","T","O","Y","O","E","O","U","T","E","A","M","T","E","A","C","H","E","R","I","B","H","O","G","E","H","U","N","D","R","E","D","R","E","D","S","R","C","A","M","E","L"];
+    function S(){
+        var names2 = [];
+        for(var i=0;i<words.length;i++){
+            names2[i] = words[i].value;
+        }
+        localStorage.setItem("names2", JSON.stringify(names2));
+    }
+    
+    function myFunction(){
+        var storedNames = JSON.parse(localStorage.getItem("names2"));
+        console.log(storedNames);
+        for(let i=0;i<61;i++){
+            words[i].value = storedNames[i];
+        }
+    }
     function empty(){
-        alert("Reseting")
+        alert("Reseting");
+        var em=["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""];
+        localStorage.setItem("names2", JSON.stringify(em));
         for(let i=0;i<61;i++){
             words[i].value="";
         }

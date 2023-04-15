@@ -111,6 +111,8 @@
             width: 98.5%;
             margin: 10px;
             border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
             /* display: grid;
             justify-content: end; */
         
@@ -135,7 +137,7 @@
         } */
     </Style>
 </head>
-<body>
+<body onload="myFunction()">
     <div>
         <div class="heading">
             <h1>Word Cross</h1>
@@ -148,10 +150,10 @@
                 <table>
                     <tr>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z1" class="white" placeholder="1" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z2" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z3" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z4" class="white" size="1%" placeholder="2" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z1" class="white" oninput="S()" placeholder="1" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z2" class="white" oninput="S()" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z3" class="white" oninput="S()" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z4" class="white" oninput="S()" size="1%" placeholder="2" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
@@ -163,7 +165,7 @@
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z5" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z5" class="white" oninput="S()" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
@@ -175,7 +177,7 @@
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z6" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z6" class="white" oninput="S()" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
@@ -187,35 +189,23 @@
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z7" class="white" placeholder="3" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z8" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z9" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z10" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z11" class="white" placeholder="4" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z7" class="white" oninput="S()" placeholder="3" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z8" class="white" oninput="S()" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z9" class="white" oninput="S()" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z10" class="white" oninput="S()" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z11" class="white" oninput="S()" placeholder="4" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="" id="z12" class="white" placeholder="5" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z13" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z14" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z15" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z16" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z12" oninput="S()" class="white" placeholder="5" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z13" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z14" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z15" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z16" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z17" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z18" class="white" placeholder="6" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z19" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z20" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z17" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                     </tr>
                     <tr>
@@ -225,7 +215,19 @@
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z21" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z18" oninput="S()" class="white" placeholder="6" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z19" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z20" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z21" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
@@ -234,22 +236,22 @@
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z22" class="white" placeholder="7" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z23" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z24" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z25" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z26" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z27" class="white" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z28" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z22" oninput="S()" class="white" placeholder="7" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z23" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z24" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z25" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z26" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z27" oninput="S()" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z28" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                     </tr>
                     <tr>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z29" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z29" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z30" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z30" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
@@ -258,7 +260,7 @@
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
-                        <td><input type="text" name="" id="z31" class="white" size="1%" maxlength="1" required></td>
+                        <td><input type="text" name="" id="z31" oninput="S()" class="white" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
                         <td><input type="text" name="" id="" size="1%" maxlength="1" required></td>
@@ -309,10 +311,46 @@
             </fieldset>
     </footer>
     <div class="end">
-        <a href="LeaderBord.html" style="padding-left: 5%;">LeaderBord</a>
-        <a href="index.html" style="padding-left: 80%;">Sign out</a>
+        <a href="LeaderBord.html" style="padding-left:75px;">LeaderBord</a>
+        <a href="" id="signout" style="padding-right:75px ;">Sign out</a>
+        <!-- <a href="" >Sign out</a> -->
     </div>
 </body>
+<script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+        import { getDatabase, ref, set, child, update, remove } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+        // import {}
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAGwGR5OxGCw0yngfgRCOWQEKnNTjNyZuY",
+            authDomain: "elitmusassignment-b7a0b.firebaseapp.com",
+            projectId: "elitmusassignment-b7a0b",
+            storageBucket: "elitmusassignment-b7a0b.appspot.com",
+            messagingSenderId: "780142124486",
+            appId: "1:780142124486:web:0620049bac3a43b0c2a6c7",
+            measurementId: "G-31T2XZFYLJ"
+        };
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase();
+        const auth = getAuth();
+
+        document.querySelector('#signout').addEventListener('click',function(){
+            signOut(auth).then(() => {
+            // Sign-out successful.
+            window.location.replace('index.html');
+            }).catch((error) => {
+            // An error happened.
+            });
+        })
+
+</script>
 <script>
     g1=document.getElementById("z1");
     g2=document.getElementById("z2");
@@ -348,12 +386,56 @@
     let words=[g1,g2,g3,g4,g5,g6,g7,g8,g9,g10,g11,g12,g13,g14,g15,g16,g17,g18,g19,g20,g21,g22,g23,g24,g25,g26,g27,g28,g29,g30,g31];
     let ans = ["F","I","S","H","O","R","S","H","E","E","P","M","O","U","S","E","I","D","O","G","U","C","H","I","C","K","E","N","O","K","W"];
     let ans1 = ["f","i","s","h","o","r","s","h","e","e","p","m","o","u","s","e","i","d","o","g","u","c","h","i","c","k","e","n","o","k","w"];
+            // Get the input element
+    // const input = document.querySelector('input');
+    // Store the value in local storage
+    // var level = 1;
+
+    // function InsertData(){
+    //     set(ref(db, "Level/"+level),{
+    //         Level: level
+    //     })
+    // }
+
+
+
+
+
+    function S(){
+        var names1 = [];
+        for(var i=0;i<words.length;i++){
+            names1[i] = words[i].value;
+        }
+        localStorage.setItem("names1", JSON.stringify(names1));
+    }
+    
+    function myFunction(){
+        // InsertData();
+        var storedNames = JSON.parse(localStorage.getItem("names1"));
+        console.log(storedNames);
+        for(let i=0;i<32;i++){
+            words[i].value = storedNames[i];
+        }
+    }
+    // Retrieve the value from local storage and set it as the input value
+        // input.value = localStorage.getItem('words');
+        // words=input.value;
     function empty(){
         alert("Reseting")
+        var em=["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""];
+        localStorage.setItem("names1", JSON.stringify(em));
         for(let i=0;i<32;i++){
             words[i].value="";
         }
+        
     }
+
+    // function levelChange(){
+    //     update(ref(db, "Level/"+level),{
+    //         Level: level
+    //     })
+    // }
+
     function check(){
         let count=0;
         for(let i=0;i<32;i++){
@@ -361,6 +443,8 @@
                 count=count+1;
                 if(count==31){
                     alert("Correct Answer");
+                    // level++;
+                    // levelChange();
                     window.location.href="Level2.html";
                     return 0;
                 }
