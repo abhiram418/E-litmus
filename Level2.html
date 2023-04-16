@@ -116,7 +116,7 @@
             margin: 10px;
             border-radius: 10px;
             display: flex;
-            justify-content: space-between;
+            justify-content:right;
             /* display: grid;
             justify-content: end; */
         }
@@ -415,7 +415,7 @@
             </fieldset>
     </footer>
     <div class="end">
-        <a href="LeaderBord.html" style="padding-left:75px;">LeaderBord</a>
+        <!-- <a href="LeaderBord.html" style="padding-left:75px;">LeaderBord</a> -->
         <a href="" id="signout" style="padding-right:75px ;">Sign out</a>
     </div>
 </body>
@@ -558,6 +558,12 @@
                 return 0;
             }
         }
+    }
+</script>
+<script>
+    window.history.forward();
+    function noBack(){
+        window.history.forward();
     }
 </script>
 </html>
