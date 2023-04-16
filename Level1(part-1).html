@@ -344,6 +344,7 @@
         document.querySelector('#signout').addEventListener('click',function(){
             signOut(auth).then(() => {
             // Sign-out successful.
+            localStorage.clear();
             window.location.replace('index.html');
             }).catch((error) => {
             // An error happened.
@@ -421,7 +422,7 @@
         // input.value = localStorage.getItem('words');
         // words=input.value;
     function empty(){
-        alert("Reseting")
+        alert("Reseting");
         var em=["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""];
         localStorage.setItem("names1", JSON.stringify(em));
         for(let i=0;i<32;i++){
